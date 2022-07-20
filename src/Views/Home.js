@@ -27,7 +27,7 @@ export default function Home() {
     } else if (campMensagem === "") {
       alert("Insira uma Mensagem!");
     } else {
-      const baseUrl = "http://localhost:3000/tickets/create";
+      const baseUrl = "https://ai2p3backend.herokuapp.com/tickets/create";
       const datapost = {
         nome: campNome,
         email: campEmail,
@@ -417,7 +417,7 @@ export default function Home() {
   //   } else if (campMensagem === "") {
   //     alert("Insira uma Mensagem!");
   //   } else {
-  //     const baseUrl = "http://localhost:3000/tickets/create";
+  //     const baseUrl = "https://ai2p3backend.herokuapp.com/tickets/create";
   //     const datapost = {
   //       nome: campNome,
   //       email: campEmail,

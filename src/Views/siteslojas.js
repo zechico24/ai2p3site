@@ -12,7 +12,7 @@ export default function Siteslojas() {
 
 
   useEffect(() => {
-    const baseUrl = "http://localhost:3000/pacotes/get/3";
+    const baseUrl = "https://ai2p3backend.herokuapp.com/pacotes/get/3";
     axios.get(baseUrl)
     .then(res=>{
     if (res.data.success) {
@@ -31,7 +31,7 @@ export default function Siteslojas() {
 
   const [dataPacotes, setdataPacotes] = useState([]);
   useEffect(() => {
-    const url = "http://localhost:3000/categoria/listwithcategory/3";
+    const url = "https://ai2p3backend.herokuapp.com/categoria/listwithcategory/3";
     axios
       .get(url)
       .then((res) => {
@@ -49,7 +49,7 @@ export default function Siteslojas() {
 
   const [dataListaInfo1, setdataListaInfo1] = useState([]);
   useEffect(() => {
-    const url = "http://localhost:3000/infoPacote/list";
+    const url = "https://ai2p3backend.herokuapp.com/infoPacote/list";
     axios
       .get(url)
       .then((res) => {
@@ -67,7 +67,7 @@ export default function Siteslojas() {
 
   const [dataListaInfo2, setdataListaInfo2] = useState([]);
   useEffect(() => {
-    const url = "http://localhost:3000/infoPacote/listwithinfopacotes/3";
+    const url = "https://ai2p3backend.herokuapp.com/infoPacote/listwithinfopacotes/3";
     axios
       .get(url)
       .then((res) => {
@@ -117,7 +117,7 @@ export default function Siteslojas() {
     if (campNome === "") {
       alert("Escreva um nome!");
     } else {
-      const baseUrl = "http://localhost:3000/pedidos/create";
+      const baseUrl = "https://ai2p3backend.herokuapp.com/pedidos/create";
       const datapost = {
         data_pedido: formatDate,
         nome: campNome,
